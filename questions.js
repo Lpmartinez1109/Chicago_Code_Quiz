@@ -1,16 +1,18 @@
 var quizContainer = document.getElementById("quiz-container");
 var resultsContainer = document.getElementById("results");
-var submitButton = document.getElementById("submit");
+// var submitButton = document.getElementById("submit");
 var startButton = document.getElementById("start");
 var questionCounter = 0
 var correct = 0;
 var incorrect = 0;
+var time = document.querySelector(".time");
+var timeLeft = 60;
 
 var myQuestions = [
   {
     title: "Which of the following is not a Chicago sports team?",
     choices: ["Chicago Bears", "Chicago Wolves", "Chicago Sky", "Chicago Cardinals"],
-    answer: "Cardinals"
+    answer: "Chicago Cardinals"
   },
   {
     title: "What is the name of the player known as 'Sweetness'?",
@@ -37,11 +39,11 @@ var myQuestions = [
     choices: ["Comiskey Park", "U.S. Celluar Field", "Guaranteed Rate Field", "Wrigley Field"],
     answer: "Guaranteed Rate Field"
   },
-  // {
-  //   title: "Which of the following are the division rivals for the Chicago Bears?",
-  //   choices: ["Green Bay Packers, Detroit Lions, Minnesota Vikings", "Dallas Cowboys, New York Giants, Philadelphia Eagles", "Atlanta Falcons,  Carliona Panthers, New Orleans Saints", "Los Angeles Rams, San Francisco 49ers, Seattle Seahawks"],
-  //   answer: "Green Bay Packers, Detroit Lions, Minnesota Vikings"
-  // },
+  {
+    title: "Which of the following are the division rivals for the Chicago Bears?",
+    choices: ["Green Bay Packers, Detroit Lions, Minnesota Vikings", "Dallas Cowboys, New York Giants, Philadelphia Eagles", "Atlanta Falcons,  Carliona Panthers, New Orleans Saints", "Los Angeles Rams, San Francisco 49ers, Seattle Seahawks"],
+    answer: "Green Bay Packers, Detroit Lions, Minnesota Vikings"
+  },
 
 ]
 
@@ -63,7 +65,19 @@ function renderQuestion() {
   }
 
 };
+function timer(){
+  var timerCountDown = setInterval(function () {
+    secondsLeft--;
+    time.textContent = secondsLeft + " seconds left";
 
+    if (secondsLeft === 0) {
+        time.textContent = "0 seconds left";
+        clearInterval(timerCountDown);
+        endQuiz()
+    }
+
+}, 1000);
+}
 
 function results(event) {
   console.log(event)
@@ -89,7 +103,14 @@ function results(event) {
 }
 function endGame() {
   alert('the score is ' + correct + ' correct and ' + incorrect + ' incorrect')
-  questionContainer.classList.add("hide")
+  quizContainer.classList.add("hide")
+    // alert("working")
+    endCont.classList.remove("hide")
+    endCont.innerHTML += "End of Quiz <br> <br> Your Score: " + score + "<br>"
+    endCont.innerHTML += "<br> Enter your initials: <br>"
+    endCont.innerHTML += "<input id='input' type='text'> <button class='btn submit'>Submit</button>";
+    var submit = document.querySelector(".submit")
+    submit.onclick = highScores
 }
 // var btnEvent = document.querySelectorAll('button');
 // btnEvent.addEventListener('click', function(event) {
@@ -103,29 +124,7 @@ function endGame() {
 renderQuestion();
 // })
 // function showResults() {
-//   var answerContainers = quizContainer.querySelectorAll(".answers");
-//   var numCorrect = 0;
-//   myQuestions[questionCounter].choices.forEach((currentQuestion, questionNumber) => {
-//     var answerContainer = answerContainers[questionNumber];
-//     var selector = `input[name=question${questionNumber}]:checked`;
-//     var userAnswer = (answerContainer.querySelector(selector) || {}).value;
-    
-//     if (userAnswer === currentQuestion.correctAnswer) {
-//       numCorrect++;
-//       answerContainers[questionNumber].style.color = "red";
-//       answerContainers[questionNumber].style.color = "lightgreen";
-//     }
-//     else {
-//     }
-//   });
-  
-
-//   resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-// }
-
-
-// buildQuiz();
-
+//   var 
 
 
 
