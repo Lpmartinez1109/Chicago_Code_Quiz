@@ -1,9 +1,12 @@
-# Code_Quiz_HW
+# Chicago_Facts_Quiz
 
-# Introduction
+# Description
+This is the Chicago facts quiz. You can answer a number of questions all relating to different facts about Chicago and Illinois in a timed quiz format. Users are given a number of answer selections and with every wrong answer, time gets taken away. At the end, you can see where you place on the leaderboard
 
-This is the Chicago Trivia game. In this verison, I chose to focus on a variety of sports questions regarding the various teams in Chicago. This is a timed quiz and with each question is multiple choice and at the end of the quiz, the user will get an alert as to how many correct and incorrect answers they recieved.
+# How to Start
 
-The biggest part of this assignment was getting the javascript to work since I had a hard time getting the buttons to start working but once I did, it was a matter of working on the html and css pages.
+By following the link here: https://lpmartinez1109.github.io/Chicago_Code_Quiz/, you can take this timed quiz and see where you rank on the leaderboard.
 
-After that, it was time to get some of the other things, such as the timer and the score to keep working, however, i kept having problesm trying to center my text in the proper place.
+Once on the landing page, click the start button and get ready to take the quiz.
+
+
