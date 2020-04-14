@@ -23,6 +23,11 @@ As shown in the image above, the user will have the option to start the quiz as 
 
 Players will be asked a variety of different multiple and true-and-false questions regarding different aspect about Chicago and the state of Illinois. With every incorrect answers, the player will be deducted 15 seconds from their overall time.
 
+# High Score
+![Chicago_Quiz_HighScores.PNG](Images/Chicago_Quiz_HighScores.PNG)
+
+Since the quiz functions on the players local device, each high score board will look different than that pictured above. There is allow a button that will allow the player to clear the high score board.
+
 # How To Play
 Once on the landing page, click the start button and get ready to take the quiz. See where you ranked among players and try to reach the top spot on the leader board.
 
