@@ -15,6 +15,11 @@ var questions = [
     answer: "Walter Payton"
   },
   {
+    title: "How many players from the Chicago Bulls have made it into the NBA Hall Of Fame?",
+    choices: ["9", "15", "10", "13"],
+    answer: "9"
+  },
+  {
     title: "The Field Museum of Natural History is home to many different exhibits. Which among the following is not one of the Field Museum's exhibits?",
     choices: ["Maximo the Titanosaur", "Chicago: Crossroads of America", "Grainger Hall Of Gems", "Sue the T.Rex"],
     answer: "Chicago: Crossroads of America"
@@ -23,6 +28,11 @@ var questions = [
     title: "How many Stanley cups have Chicago Blackhawks won?",
     choices: ["6", "4", "2", "16"],
     answer: "6"
+  },
+  {
+    title: "Which of the following Chicago Bears players is not a NFL Hall Of Famer?",
+    choices: ["Sid Luckman", "George McAfee", "Charles Tillman", 'Harold Grange'],
+    answer: "Charles Tillman"
   },
  
   {
@@ -65,6 +75,10 @@ var questions = [
     choices: ["True", "False"],
     answer: "False"
   },
-  
+  {
+    title: "How many NFL Hall Of Famers do the Chicago Bears have in the history of their organization?",
+    choices: ["30", "26", "20", "46"],
+    answer: "30"
+  },
 ]
 
