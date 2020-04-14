@@ -7,7 +7,7 @@ This is the Chicago facts quiz. You can answer a number of questions all relatin
 
 By following the link here: https://lpmartinez1109.github.io/Chicago_Code_Quiz/, you can take this timed quiz and see where you rank on the leaderboard.
 
-![Chicago_Quiz_Start.PNG](../Images/Chicago_Quiz_Start.PNG)
+![Chicago_Quiz_Start.PNG](Images/Chicago_Quiz_Start.PNG)
 Once on the landing page, click the start button and get ready to take the quiz.
 
 
